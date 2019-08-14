@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        
+    </default>
+    
+    <customer_account_create translate="label">        
+        <reference name="customer_form_register">
+            <action method="setTemplate"><template>attributecustomer/customer/form/register.phtml</template></action>
+        </reference>    
+    </customer_account_create>
+
+    <customer_account>
+        <reference name="customer_account_navigation">
+            <action method="addLink" translate="label" module="customerattribute">
+                <name>customerattribute</name>                
+                <path>profile/profileimage/index/</path>
+                <label>Profile Image</label>
+				<position>2</position>
+            </action>
+        </reference>
+    </customer_account>    
+
+     <profile_profileimage_index translate="label">
+        <update handle="customer_account"/>
+        <reference name="content">
+            <block type="core/template" name="customerattribute" template="attributecustomer/profileimage.phtml" />
+        </reference>
+    </profile_profileimage_index> 
+    
+</layout>

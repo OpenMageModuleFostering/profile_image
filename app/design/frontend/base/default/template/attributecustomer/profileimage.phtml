@@ -1,0 +1,94 @@
+<div class="page-title">
+    <h1><?php echo $this->__('Customer Profile Image') ?></h1>
+</div>
+<div id="messages_product_view"><?php echo $this->getMessagesBlock()->getGroupedHtml() ?></div>
+<div class="box-account box-info">
+   <div class="col2-set">
+	   
+        <div class="col-1">
+	        <div class="box">
+	            <div class="box-title">
+	                <h3>Avtar Image</h3>     	                    
+	            </div>
+	            <div class="box-content">
+					<img class="img-responsive" id="img-responsive" src="<?php Mage::helper('customerattribute')->getImage(); ?>" alt="Profile Image">
+	            </div>
+	        </div>
+        </div>
+
+         <div class="col-2">
+	        <div class="box">
+	            <div class="box-title">
+	                <h3>Change Avtar Image</h3>               
+	            </div>
+	              	<div class="box-content">
+							<form action="<?php echo Mage::helper('customerattribute')->getUploadUrl() ?>" method="post" enctype="multipart/form-data" onsubmit="return checkSize(27000)" >
+							    <div class="fieldset">  							       
+							        <ul class="form-list">
+							            <li> 
+							                <input type="file" name="avatar" id="file" onChange="readURL(this);" required><br>
+							            </li>
+							              <li> 
+							                <img id="uploadimag" src="#" alt="your image" style="display:none" />
+							            </li>
+							            <li>
+							                <button type ="submit" name="submit" title="upload" class="button">
+							                    <span><span><?php echo $this->__('Upload') ?></span></span>
+							                </button>
+							            </li>
+											
+							        </ul>
+							    </div>
+							</form>
+            		</div>	            
+	        </div>
+	    </div>
+
+    </div>
+</div>
+
+
+<div class="buttons-set">
+    <p class="back-link"><a href="<?php echo $this->getUrl('customer/account/') ?>"><small>&laquo; </small><?php echo $this->__('Back') ?></a></p>
+</div>
+
+<script type="text/javascript">    
+     function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {                   
+                    jQuery('#uploadimag')
+                        .css('display','block')
+                        .attr('src', e.target.result)
+                        .width(200)
+                        .height(200);
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        function checkSize(max_img_size)
+		{
+		    var input = document.getElementById("file");
+		    // check for browser support (may need to be modified)
+		    if(input.files && input.files.length == 1)
+		    {           
+		        if (input.files[0].size > max_img_size) 
+		        {
+		            alert("The file must be less than " + input.files[0].size + "KB and please upload size 200X200");
+		            return false;
+		        }
+		    }
+
+		    return true;
+		}
+
+</script>
+
+<style type="text/css">
+img#img-responsive {
+    width: 200px;
+    border: 1px solid;
+    padding: 10px;
+}
+</style>

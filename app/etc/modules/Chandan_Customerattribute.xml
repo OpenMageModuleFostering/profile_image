@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+ <modules>
+  <Chandan_Customerattribute>
+   <codePool>community</codePool>
+   <active>true</active>
+  </Chandan_Customerattribute>
+ </modules>
+</config>

@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/profile_Image",
+    "type": "magento-module",
+    "license": "OSL",
+    "homepage": "",
+    "description": "Profile Image",
+    "authors": [
+    {
+        "name": "Chandan Kumar Singh",
+        "email": "chandankumar8050@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
