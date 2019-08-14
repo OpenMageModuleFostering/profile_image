@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>profile_Image</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/osl-3.0.php">OSL</license>
     <channel>community</channel>
@@ -11,8 +11,8 @@
     <notes>First Release</notes>
     <authors><author><name>Chandan Kumar Singh</name><user>chandan8050</user><email>chandankumar8050@gmail.com</email></author></authors>
     <date>2017-02-03</date>
-    <time>04:29:21</time>
-    <contents><target name="mageetc"><dir name="modules"><file name="Chandan_Customerattribute.xml" hash="aec08690c29efa9a66bfb42d23036baf"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="attributecustomer.xml" hash="68afb39335f3640492892f5de74b0263"/></dir><dir name="template"><dir name="attributecustomer"><dir name="customer"><dir name="form"><file name="register.phtml" hash="b924a70fbd6c7e9b445106ebecbbb741"/></dir></dir><file name="profileimage.phtml" hash="275211ba4183cf0b20aa7c2ab380210a"/></dir></dir></dir></dir></dir></target></contents>
+    <time>04:52:18</time>
+    <contents><target name="magecommunity"><dir name="Chandan"><dir name="Customerattribute"><dir name="Helper"><file name="Data.php" hash="1679c76d4d24bcaeead56719a50e7ac8"/></dir><dir name="Model"><file name="Mysql4.php" hash="fda7f2b680143bcddb05d71bdccfa57f"/></dir><dir name="controllers"><file name="ProfileimageController.php" hash="52dd38f754f32445d3223086552eed01"/></dir><dir name="etc"><file name="config.xml" hash="0cecebd732caf14f1db33d6d8f3672eb"/></dir><dir name="sql"><dir name="customerattribute_setup"><file name="mysql4-install-1.0.0.php" hash="a1cf981386bf4e17ae215722d831907f"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Chandan_Customerattribute.xml" hash="aec08690c29efa9a66bfb42d23036baf"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="attributecustomer.xml" hash="68afb39335f3640492892f5de74b0263"/></dir><dir name="template"><dir name="attributecustomer"><dir name="customer"><dir name="form"><file name="register.phtml" hash="b924a70fbd6c7e9b445106ebecbbb741"/></dir></dir><file name="profileimage.phtml" hash="275211ba4183cf0b20aa7c2ab380210a"/></dir></dir></dir></dir></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.2.0</min><max>7.1.0</max></php></required></dependencies>
 </package>

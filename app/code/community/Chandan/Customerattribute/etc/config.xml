@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <modules>
+    <Chandan_Customerattribute>
+      <version>1.0.0</version>
+    </Chandan_Customerattribute>
+  </modules>
+    <global>
+        <resources>
+            <customerattribute_setup>
+                <setup>
+                    <module>Chandan_Customerattribute</module>
+                    <class>Chandan_Customerattribute_Model_Mysql4</class>
+                </setup>                
+            </customerattribute_setup>
+        </resources>
+          <helpers>
+            <customerattribute>
+                <class>Chandan_Customerattribute_Helper</class>
+            </customerattribute>
+        </helpers>
+    </global>
+
+    <frontend>
+
+        <routers>
+            <customerattribute>
+                <use>standard</use>
+                <args>
+                    <module>Chandan_Customerattribute</module>
+                    <frontName>profile</frontName>
+                </args>
+            </customerattribute>
+        </routers>
+
+        <layout>
+            <updates>
+                <customerattribute>
+                    <file>attributecustomer.xml</file>
+                </customerattribute>
+            </updates>
+        </layout>
+    </frontend>
+</config>
